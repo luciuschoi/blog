@@ -1,0 +1,27 @@
+version: '3'
+volumes:  
+  postgres_data: {} 
+services:  
+  app:    
+    build:      
+      context: .      
+      dockerfile: ./docker/app/DockerFile    
+    env_file:
+      - .env/production/web      
+      - .env/production/database      
+    depends_on:      
+      - database  
+  database:    
+    image: postgres    
+    env_file:
+      - .env/production/database
+    volumes:      
+      - postgres_data:/var/lib/postgresql/data  
+  web:    
+    build:      
+      context: .      
+      dockerfile: ./docker/web/DockerFile    
+    depends_on:      
+      - app    
+    ports:      
+      - 80:80
