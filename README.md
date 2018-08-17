@@ -495,7 +495,20 @@ $ docker-compose down
 
 > **Note**: `docker-compose -h` 명령으로 여러가지 실행 옵션을 알 수 있다.  즉, 서비스 명 각각에 대해서 `start`|`restart`|`stop`|`build`|`up`|`down` 등 다양한 명령옵션을 사용할 수 있다. 
 
+### 3. 도커 로그
 
+도커 로그 콘솔을 보기 위해서는 다음과 같이 명령을 실행한다. 
+
+```sh
+$ docker-compose logs -f
+```
+
+이 명령은 컴포즈 전체에 대한 로그를 보기 위한 것이고 app 과 web 서비스에 각각에 대해서 로그 콘솔을 볼 수 도 있다. 
+
+```sh
+$ docker-compose logs -f app
+$ docker-compose logs -f web
+```
 
 ## (4) 웹 서비스 확인 
 
