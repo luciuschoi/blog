@@ -66,7 +66,7 @@ $ rails server
 
 
 
-![image-20180816212720340](./assets/2018-08-16_21-21-02.png)
+![image-20180816212720340](/app/assets/images/2018-08-16_21-21-02.png)
 
 
 
@@ -87,7 +87,7 @@ Rails.application.routes.draw do
 end
 ```
 
-![](/Users/lucius/Library/Mobile Documents/com~apple~CloudDocs/Documents/Markdown문서/Deployment of Rails 5 Project using Docker/assets/2018-08-17_17-18-17.png)
+![](/app/assets/images/2018-08-17_17-18-17.png)
 
 
 
@@ -140,7 +140,7 @@ Running via Spring preloader in process 24600
 
 그리고 브라우저에서 확인한다.
 
-![](/Users/lucius/Library/Mobile Documents/com~apple~CloudDocs/Documents/Markdown문서/Deployment of Rails 5 Project using Docker/assets/2018-08-16_21-34-27.png)
+![](/app/assets/images/2018-08-16_21-34-27.png)
 
 
 
